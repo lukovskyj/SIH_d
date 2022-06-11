@@ -2,7 +2,7 @@ package com.studyisnthard.SIH.controller;
 
 
 import com.studyisnthard.SIH.entity.*;
-import com.studyisnthard.SIH.repos.AchievementsRepository;
+//import com.studyisnthard.SIH.repos.AchievementsRepository;
 import com.studyisnthard.SIH.service.ArticleService;
 import com.studyisnthard.SIH.service.TestService;
 import com.studyisnthard.SIH.service.UserService;
@@ -23,8 +23,8 @@ public class AdminController {
     private UserService userService;
     @Autowired
     private TestService testService;
-    @Autowired
-    private AchievementsRepository achievementsRepository;
+//    @Autowired
+//    private AchievementsRepository achievementsRepository;
     @Autowired
     private ArticleService articleService;
 
@@ -199,14 +199,14 @@ public class AdminController {
         return "admintest";
     }
 
-    @PostMapping("/admin/ach")
-    public String gCh(@RequestParam(name = "achievementsName") String achievementsName,
-            @RequestParam(name = "achievementsDescription") String achievementsDescription){
-        System.out.println("achievementsDescription + " + " + achievementsDescription");
-        Achievements achievements = new Achievements(null, achievementsName, achievementsDescription);
-        achievementsRepository.save(achievements);
-        return "admintest";
-    }
+//    @PostMapping("/admin/ach")
+//    public String gCh(@RequestParam(name = "achievementsName") String achievementsName,
+//            @RequestParam(name = "achievementsDescription") String achievementsDescription){
+//        System.out.println("achievementsDescription + " + " + achievementsDescription");
+//        Achievements achievements = new Achievements(null, achievementsName, achievementsDescription);
+//        achievementsRepository.save(achievements);
+//        return "admintest";
+//    }
 
     @GetMapping("/admin/create")
     public String adminCreate(){
