@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+    <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+</head>
+
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center p-0">
+
+        <div class="col-12 row mx-0 justify-content-center p-0">
+            <div class="row justify-content-center green-background p-y-3">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <div class="col-12">
+                        <p class="font-medium font-color-white">Часи дієслова</p>
+                    </div>
+                    <div class="col-12 row m-t-2">
+                        <div class="col-4 row">
+                            <a th:href="@{/граматика/future_continuous}" class="a-white">Future Continuous</a>
+                            <a class="m-t-1 a-white">Future in the Past</a>
+                            <a href="" class="m-t-1 a-white">Future Perfect Continuous</a>
+                            <a href="" class="m-t-1 a-white">Future Simple</a>
+                            <a href="" class="m-t-1 a-white">Have something done</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a th:href="@{/граматика/past_continuous}" class="a-white">Past Continuous</a>
+                            <a href="" class="m-t-1 a-white">Past Perfect</a>
+                            <a href="" class="m-t-1 a-white">Past Perfect Continuous</a>
+                            <a th:href="@{/граматика/past_simple}" class="m-t-1 a-white">Past Simple</a>
+                            <a href="" class="m-t-1 a-white">Passive Voice</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-white">Present Continuous</a>
+                            <a href="" class="m-t-1 a-white">Present Perfect</a>
+                            <a href="" class="m-t-1 a-white">Present Perfect Continuous</a>
+                            <a  class="m-t-1 a-white">Present Simple</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center background-light-blue p-y-3">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <div class="col-12">
+                        <div class="col-12">
+                            <p class="font-medium">Модальні дієслова</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row m-t-2">
+                        <div class="col-4 row">
+                            <a class="a-black">Can, could</a>
+                            <a class="m-t-1 a-black">Have to</a>
+                            <a href="" class="m-t-1 a-black">Need</a>
+                            <a href="" class="m-t-1 a-black">To be to</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Had better</a>
+                            <a href="" class="m-t-1 a-black">May, might</a>
+                            <a href="" class="m-t-1 a-black">Shall</a>
+                            <a href="" class="m-t-1 a-black">Will, would</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Dare</a>
+                            <a href="" class="m-t-1 a-black">Must</a>
+                            <a href="" class="m-t-1 a-black">Should, ought to</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center p-y-3">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <div class="col-12">
+                        <p class="font-medium">Дієслово</p>
+                    </div>
+                    <div class="col-12 row m-t-2">
+                        <div class="col-4 row">
+                            <a class="a-black">Герундій</a>
+                            <a class="m-t-1 a-black">Спосіб дієслова</a>
+                            <a href="" class="m-t-1 a-black">Умовний спосіб</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Інфінітив</a>
+                            <a href="" class="m-t-1 a-black">Дієприкметник</a>
+                            <a href="" class="m-t-1 a-black">Дієслово to be</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Неправильні дієслова</a>
+                            <a href="" class="m-t-1 a-black">Фразові дієслова</a>
+                            <a href="" class="m-t-1 a-black">Види дієслів</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center p-y-3 background-light-blue">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <div class="col-12">
+                        <p class="font-medium">Частини мови</p>
+                    </div>
+                    <div class="col-12 row m-t-2">
+                        <div class="col-4 row">
+                            <a class="a-black">Прикметники</a>
+                            <a class="m-t-1 a-black">Сполучники</a>
+                            <a href="" class="m-t-1 a-black">Вигуки</a>
+                            <a href="" class="m-t-1 a-black">Числівник</a>
+                            <a href="" class="m-t-1 a-black">Питальні слова</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Прислівники</a>
+                            <a href="" class="m-t-1 a-black">Вказівні займенники</a>
+                            <a href="" class="m-t-1 a-black">Неправильні форми множини</a>
+                            <a href="" class="m-t-1 a-black">Прийменники</a>
+                            <a href="" class="m-t-1 a-black">Взаємні займенники</a>
+                        </div>
+                        <div class="col-4 row">
+                            <a href="" class="a-black">Артиклі</a>
+                            <a href="" class="m-t-1 a-black">Неозначені займенники</a>
+                            <a href="" class="m-t-1 a-black">Іменник</a>
+                            <a href="" class="m-t-1 a-black">Займенники</a>
+                            <a href="" class="m-t-1 a-black">Відносні займенники</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <div class="navigation-bar "></div>
+    </div>
+</div>
+<script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="arrow_rotate.js"></script>
+</body>
+
+</html>

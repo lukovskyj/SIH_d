@@ -1,0 +1,583 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+</head>
+
+<body class="position-relative">
+    <div class="container-body position-relative">
+        <nav th:replace="fragments/navBar :: nav"></nav>
+        <div class="col-12 row mx-0 justify-content-center">
+            <div class="col-12 col-md-11 col-lg-10">
+                <header class="row mt-5">
+                    <p class="font-header"><strong>Past Simple</strong> </p>
+                    <p class="font-medium"><strong>Простий окладніше про дієслово to be та утворенн(неозначений) минулий час</strong> </p>
+                </header>
+                <div class="row mt-5 justify-content-center">
+
+                    <div class="col-12">
+                        <p class="font-title"><strong>Вміст статті</strong> </p>
+                        <ul class="list-group list-group-flush list-page-content" id="page-content">
+                            <li class="list-group-item px-0"><a href="#scrollspyHeading1">Загальні правила
+                                    формування</a> </li>
+                            <li class="list-group-item px-0"><a href="#scrollspyHeading2">To be в Past Simple</a></li>
+                            <li class="list-group-item px-0"><a href="#scrollspyHeading3">Використання Past Simple
+                                </a></li>
+                            <li class="list-group-item px-0"><a href="#scrollspyHeading4">Часові форми, що
+                                    використовуються у Past Simple</a></li>
+                            <li class="list-group-item px-0"><a href="#scrollspyHeading5">Рекомендації</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5 position-relative" data-bs-spy="scroll" data-bs-target="#page-content"
+                    data-bs-offset="0" tabindex="0">
+                    <p class="font-title" id="scrollspyHeading1"><strong>Загальні правила формування</strong> </p>
+                    <div class="col-12 pt-4 row">
+                        <div class="col-4">
+                            <div class="col-12">
+                                <div class="col-12 d-flex align-content-center"><img
+                                        th:src="@{/img/sih_img/grammatic/affermative.svg}">
+                                    <span class="font-medium font" style="font-weight: 600;">Affirmative</span>
+                                </div>
+                                <div class="col-12 mt-3 row gremma-right-border">
+                                    <div class="col-12">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <img th:src="@{/img/sih_img/grammatic/person-bounding-box.svg}">
+                                                    </td>
+                                                    <td class="align-middle ps-2"><span class="fw-bold">+</span></td>
+                                                    <td class="align-middle text-center ps-2">
+                                                        <span class="fw-bold">Ved</span>
+                                                        <br>
+                                                        <span class="fw-bold">або</span>
+                                                        <br>
+                                                        <span class="fw-bold">V2</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <span class="fw-bold">+</span>
+                                                        <span class="ps-2 fw-bold">...</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <span class=""><span class="">I</span>
+                                            <span class="font-color-ligth-green">walked.</span></span>
+                                        <br>
+                                        <span class=""><span class="">She</span> <span
+                                                class="font-color-ligth-green">saw</span> her yesterday.</span>
+                                        <br>
+                                        <span class="">Last year, <span class="">they</span>
+                                            <span class="font-color-ligth-green">traveled</span> to Japan.</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-4 p-md-0">
+                            <div class="col-12">
+                                <div class="col-12 d-flex align-content-center"><img
+                                        th:src="@{/img/sih_img/grammatic/negative.svg}">
+                                    <span class="font-medium font" style="font-weight: 600;">Negative</span>
+                                </div>
+                                <div class="col-12 mt-3 row gremma-right-border">
+                                    <div class="col-12">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <img th:src="@{/img/sih_img/grammatic/person-bounding-box.svg}">
+                                                    </td>
+                                                    <td class="align-middle ps-2"><span class="fw-bold">+</span></td>
+                                                    <td class="align-middle text-center ps-2">
+                                                        <span class="fw-bold">didn't</span>
+                                                        <br>
+                                                        <span class="fw-bold">(did not)</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <span class="fw-bold">+</span>
+                                                        <span class="fw-bold ps-2">V</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                        <span class="ps-2 fw-bold">...</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <span class="">
+                                            <span class="">I</span>
+                                            <span class="font-color-ligth-green">didn't see</span> a play
+                                            yesterday.
+                                            <br>
+                                            He <span class="font-color-ligth-green">didn't wash</span> his car.
+                                            <br>
+                                            I <span class="font-color-ligth-green">didn't work</span> yesterday.
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-4 p-md-0">
+                            <div class="col-12">
+                                <div class="col-12 d-flex align-content-center"><img
+                                        th:src="@{/img/sih_img/grammatic/interogative.svg}">
+                                    <span class="font-medium font" style="font-weight: 600;">Interrogative</span>
+                                </div>
+                                <div class="col-12 mt-3 row">
+                                    <div class="col-12">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle text-center">
+                                                        <span class="fw-bold">Did</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <img th:src="@{/img/sih_img/grammatic/person-bounding-box.svg}">
+                                                    </td>
+                                                    <td class="align-middle ps-2"><span class="fw-bold">+</span></td>
+                                                    <td class="align-middle text-center ps-2">
+                                                        <span class="fw-bold ps-2">V</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                        <span class="fw-bold ps-2">...</span>
+                                                        <span class="fw-bold ps-2">?</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <span class="fw-bold">+</span>
+                                                        <span class="ps-2 fw-bold">...</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="mt-3">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle text-center">
+                                                        <span class="fw-bold text-start">QW</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                        <span class="fw-bold ps-2">did</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <img th:src="@{/img/sih_img/grammatic/person-bounding-box.svg}">
+                                                    </td>
+                                                    <td class="align-middle ps-2"><span class="fw-bold">+</span></td>
+                                                    <td class="align-middle text-center ps-2">
+                                                        <span class="fw-bold ps-2">V</span>
+                                                        <span class="fw-bold ps-2">+</span>
+                                                        <span class="fw-bold ps-2">...</span>
+                                                        <span class="fw-bold ps-2">?</span>
+                                                    </td>
+                                                    <td class="align-middle ps-2">
+                                                        <span class="fw-bold i">+</span>
+                                                        <span class="ps-2 fw-bold">...</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <span class=""><span class="">I</span>
+                                            <span class="font-color-ligth-green">walked.</span></span>
+                                        <br>
+                                        <span class=""><span class="">She</span> <span
+                                                class="font-color-ligth-green">saw</span> her yesterday.</span>
+                                        <br>
+                                        <span class="">Last year, <span class="">they</span>
+                                            <span class="font-color-ligth-green">traveled</span> to Japan.</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-1"></div>
+                        <div class="col-10 d-flex justify-content-between background-light-blue">
+                            <table class="mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle ps-2">
+                                            <img th:src="@{/img/sih_img/grammatic/person-bounding-box.svg}">
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="ps-3">-</span>
+                                            <span class="ps-3">підмет</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="fw-bold">V</span>
+                                        </td>
+                                        <td>
+
+                                            <span class="ps-3">-</span>
+                                            <span class="ps-3">інфінітив дієслова</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="fw-bold">QW</span>
+
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="ps-3">-</span>
+                                            <span class="ps-3">запитальне слово</span>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle ps-2">
+                                            <span class="fw-bold">Ved</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="ps-3">-</span>
+                                            <span class="ps-3">дієслово з закінченням ed</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="fw-bold">V2</span>
+                                        </td>
+                                        <td>
+
+                                            <span class="ps-3">-</span>
+                                            <span class="ps-3">друга форма неправильного дієслова</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 position-relative col-12">
+                    <p class="font-medium"><strong>Стверджувальне речення</strong></p>
+                    <p class=" m-t-1">Past Simple (Past Indefinite) утворюється за допомогою
+                        використання
+                        форми минулого часу <a>смислового дієслова</a> . Якщо дія виражена правильним
+                        дієсловом, то його форма
+                        минулого часу утворюється за допомогою додавання закінчення <a href="#">-ed</a> до його
+                        словникової
+                        форми. Якщо
+                        вживається неправильне дієслово, тоді використовується його друга форма з таблиці <a
+                            href="#">неправильних
+                            дієслів</a> . Якщо потрібне дієслово відсутнє в таблиці, це означає, що воно правильне і
+                        минулий час
+                        утворюється за допомогою закінчення -ed. Фор ма минулого часу дієслова однакова для всіх осіб
+                        однини та множини (окрім дієслова to be).</p>
+                    <div class="row mt-5">
+                        <div class="col-1"></div>
+                        <div class="col-10 gremma-left-border">
+                            <p>The boys<span class="font-color-ligth-green"> played</span> in the garden. – Хлопчики
+                                грали в саду.</p>
+                            <p>Tom <span class="font-color-ligth-green">bought </span>a new car last week. – Том купив
+                                нову машину.</p>
+                            <p>They <span class="font-color-ligth-green">planned</span> the robbery. – Вони спланували
+                                пограбування.</p>
+                        </div>
+                    </div>
+                    <div class="row p-3 background-light-blue mt-5">
+                        <p class=""><strong>Зверніть увагу</strong> на те, що є різні правила додавання
+                            <strong>закінчення -ed</strong>
+                            до дієслів.
+                            Рекомендуємо
+                            ознайомитись, із звазанними з цією статтею, <a href="#">матеріалами</a>.
+                        </p>
+                        <div class="row justify-content-center">
+                            <div class="col-10 mt-5">
+                                <p>to watch - watch<span class="font-color-ligth-green">ed</span> </p>
+                                <p>to agree - agree<span class="font-color-ligth-green">d</span></p>
+                                <p>to study - stud<span class="font-color-ligth-green">i</span>ed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <p class="font-medium"><strong>Заперечне речення</strong> </p>
+                        <p class=" m-t-1">Заперечення в Past Simple утворюється за допомогою <a href="#">допоміжного
+                                дієслова</a> <strong>did</strong> та
+                            заперечної частки <strong>not</strong> після нього, що стоять після <a href="#">підмета</a>
+                            та перед смисловим дієсловом. <strong>Did</strong>
+                            –
+                            це форма минулого часу допоміжного дієслова <strong>do</strong>. <strong>Did</strong>
+                            вживається для всіх осіб однини та
+                            множини.
+                            Після <strong>did not</strong> смислове дієслово використовується в формі <a>простого
+                                інфінітиву</a> без частки to,
+                            тому
+                            що граматичний час в такому випадку виражається через допоміжне дієслово
+                            <strong>did</strong>.
+                        </p>
+                        <div class="row mt-5">
+                            <div class="col-1"></div>
+                            <div class="col-10 gremma-left-border">
+                                <p>She<span class="font-color-ligth-green"> did not work</span> in the garden. –
+                                    Хлопчики
+                                    грали в саду.</p>
+                                <p>Tom <span class="font-color-ligth-green">did not buy </span>a new car last week. –
+                                    Том
+                                    купив
+                                    нову машину.</p>
+                                <p>They <span class="font-color-ligth-green">were not plan</span> the robbery. – Вони
+                                    спланували
+                                    пограбування.</p>
+                            </div>
+                        </div>
+                        <p class="mt-5">Заперечення з дієсловом <a href="#">to be</a> в формі минулого часу
+                            (<strong>was, were</strong>)
+                            утворюється шляхом
+                            додавання частки <strong>not</strong> після <strong>was</strong> або <strong>were</strong>.
+                            <strong>Was</strong>
+                            та <strong>were</strong> не потребують допоміжних дієслів для
+                            утворення заперечного речення.
+                        </p>
+
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-10">
+                                <p>I <span class="font-color-ligth-green">was not</span> angry yesterday. – Я не була
+                                    злою вчора.</p>
+                                <p>Kate and Jack <span class="font-color-ligth-green">were not</span> here two day ago.
+                                    – Кейт та Джек не були тут два дні тому.</p>
+                                <p class="text-center background-light-blue mt-3 p-1">was not = wasn't (скорочення) |
+                                    were not = weren't</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <p class="font-medium"><strong>Питальне речення</strong> </p>
+                        <p class=" m-t-1">Загальне питання в Past Simple утворюється за допомогою допоміжного дієслова
+                            <strong>did</strong>,
+                            що ставиться на початку речення перед <a href="#">підметом</a>. Після підмета
+                            використовується смислове
+                            дієслово
+                            тільки в формі <a href="#">простого інфінітиву</a> без частки to.
+                        </p>
+                        <div class="row mt-5">
+                            <div class="col-1"></div>
+                            <div class="col-10 gremma-left-border">
+                                <p><span class="font-color-ligth-green">Did</span> she <span
+                                        class="font-color-ligth-green">work</span> abroad? –
+                                    Вона працювала за кордоном?</p>
+                                <p><span class="font-color-ligth-green">Did</span> Harry <span
+                                        class="font-color-ligth-green">write</span> a lot of letters? - Гаррі писав
+                                    багато
+                                    листів?</p>
+                                <p><span class="font-color-ligth-green">Did</span> my uncle <span
+                                        class="font-color-ligth-green">live</span> here? - Чи жив тут мій дядько?</p>
+                            </div>
+                        </div>
+                        <p class="mt-5">Спеціальне питання в Past Simple утворюється за допомогою питального слова або
+                            фрази, що ставиться на початок речення перед допоміжним дієсловом. Подальший порядок слів
+                            такий
+                            самий, як і в загальному питанні для Past Simple.
+                        </p>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-10">
+                                <p><span class="font-color-ligth-green">Where did</span> she work? – Де вона працювала?
+                                </p>
+                                <p><span class="font-color-ligth-green">When did</span> he live here? – Коли він тут
+                                    жив?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5" id="scrollspyHeading2">
+                        <p class="font-title"><strong>To be в Past Simple</strong> </p>
+                        <p class=" m-t-1">Дієслово <strong>to be</strong> (бути, знаходитися, існувати) – особливий й
+                            для
+                            часу Past Simple
+                            має дві форми: <strong>was</strong> та <strong>were</strong> . Це дієслово не потребує
+                            допоміжних дієслів для утворення заперечних
+                            та питальних речень. Вибір правильної форми залежить від підмета у реченні.
+                        </p>
+                        <p class="mt-1">
+                            <strong>Was</strong> – використовується, коли підмет виражений іменником або займенником у
+                            формі
+                            однини (I, he,
+                            she, it).
+                        </p>
+                        <p class="mt-1">
+                            <strong>Were</strong> – коли підмет вказує на множину людей або речей (we, they), а також
+                            коли
+                            він виражений
+                            займенником you (ти, ви, ввічливе Ви).
+                        </p>
+                        <div class="col-12 p-3 background-light-blue mt-5">
+                            <p class="">Докладніше про дієслово to be та утворення заперечних та питальних речень з ним
+                                розглянуто в окремій <a href="#">статті</a>.</p>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-1"></div>
+                            <div class="col-10 gremma-left-border">
+                                <p>I <span class="font-color-ligth-green">was</span> tired. – Я був втомленим.</p>
+                                <p>
+                                    She <span class="font-color-ligth-green">wasn't</span> abroad. – Вона не була за
+                                    кордоном.</p>
+                                <p><span class="font-color-ligth-green">Was</span> Harry a good writer? – Гаррі був
+                                    хорошим
+                                    письменником?</p>
+                                <p class="mt-3">You <span class="font-color-ligth-green">were</span> tired. – Ви були
+                                    втомлені.</p>
+                                <p>Those books <span class="font-color-ligth-green">weren't</span> that old. – Ті книги
+                                    не
+                                    були настільки старими.</p>
+                                <p>Where <span class="font-color-ligth-green">were</span> your parents last summer? – Де
+                                    були твої батьки минулого літа?</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-5" id="scrollspyHeading3">
+                        <p class="font-title"><strong>Використання Past Simple
+                            </strong> </p>
+                        <p class="font-medium mt-5"><strong>Нетривалі дії в конкретний момент у минулому</strong> </p>
+                        <p class=" mt-3">Past Simple використовується для вираження нетривалих дій, коли відомий
+                            неточний час у минулому, в який ця дія відбувалася. Навіть якщо мовець й не зазначив певний
+                            час, то він (цей час) все одно мається на увазі.
+                        </p>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-10 gremma-left-border">
+                                <p>She worked abroad <span class="font-color-ligth-green">2 years ago</span>. – Вона
+                                    працювала за кордоном два роки тому.</p>
+                                <p>I met my old friend <span class="font-color-ligth-green">yesterday</span>. – Вчора я
+                                    зустрів свого старого друга.</p>
+                                <p>Harry wrote a lot of letters <span class="font-color-ligth-green">in 2011</span>. –
+                                    Гаррі написав багато листів в 2011 році.</p>
+                            </div>
+                        </div>
+                        <p class="font-medium mt-5"><strong>Дії, що завершилися в минулому</strong> </p>
+                        <p class="mt-3">Past Simple використовується для вираження дій, що завершилися в минулому та не
+                            мають відношення (видимих результатів) у теперішньому. Така дія могла буди одноразовою,
+                            повторюваною, нетривалою, або ж навпаки могла тривати певний проміжок часу, але її
+                            тривалість неважлива.</p>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-10 gremma-left-border">
+                                <p>He was a famous singer. – Він був відомим співаком. (Він більше не співає).</p>
+                                <p>This man once won a medal. – Цей чоловік одного разу виграв медаль.</p>
+                                <p>She worked abroad for 20 years. – Вона працювала за кордоном двадцять років. (Вона
+                                    більше не працює за кордоном).</p>
+                            </div>
+                        </div>
+                        <p class="font-medium mt-5"><strong>Дії, що не можуть більше повторитися</strong> </p>
+                        <p class="mt-3">Past Simple використовується також для опису дій, що відбулися одного разу в
+                            минулому і більше не можуть повторитися в теперішньому або у майбутньому через певні
+                            обставини. </p>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-10 gremma-left-border">
+                                <p>Mary won a Math medal when she was a schoolgirl. – Мері виграла медаль з математики,
+                                    коли була школяркою. (Вона не може більше виграти медаль з математики, адже вона
+                                    більше не школярка).</p>
+                                <p class="mt-1">My grandmother once sang with Freddie Mercury. – Одного разу моя бабуся
+                                    співала з
+                                    Фредді Мерк'юрі. (Вона більше не може співати з ним, його немає в живих).</p>
+                            </div>
+                        </div>
+                        <p class="font-medium mt-5"><strong>Послідовні дії у минулому</strong> </p>
+                        <p class="mt-3">Past Simple вживається для перерахування декількох дій у минулому, що
+                            відбувалися послідовно, одна за одною.</p>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-10 gremma-left-border">
+                                <p>She <span class="font-color-ligth-green">entered</span> the room and <span
+                                        class="font-color-ligth-green">screamed</span> . – Вона зайшла до кімнати та
+                                    закричала.</p>
+                                <p class="mt-1">I <span class="font-color-ligth-green">woke up, washed</span> my face
+                                    and <span class="font-color-ligth-green">brushed</span> my teeth. – Я прокинувся,
+                                    умився
+                                    та почистив зуби.</p>
+                            </div>
+                        </div>
+                        <p class="mt-5">Для вираження декількох дій, що відбувалися та тривали одночасно,
+                            використовується час <a href="">Past Continuous</a>.</p>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-10 gremma-left-border">
+                                <p class="fst-italic">Ann was cleaning the house while Mark was washing their car. – Енн
+                                    прибирала в будинку тоді, коли Марк мив їхню машину.</p>
+                                <p class="mt-1 fst-italic">Kate was drawing and Paul was doing his hometask. – Кейт
+                                    малювала, а Пол виконував своє домашнє завдання.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <p class="font-title" id="scrollspyHeading4"><strong>Часові форми, що використовуються у Past Simple
+                            </strong> </p>
+                        <p class="mt-5">Past Simple використовується, якщо на питання «коли це сталося?» можна дати
+                            чітку, але неточну відповідь про час дії. Якщо час, в який відбувалася дія, невідомий, й дія
+                            має результати в теперішньому часі, тоді використовується час з групи Perfect. Якщо відомий
+                            точний момент часу, в який протікала або відбувалася певна дія, то використовується <a
+                                href="#" class="href">Past Continuous</a>
+                            .</p>
+                        <div class="row mt-5 justify-content-center fst-italic">
+                            <div class="col-10">
+                                <p>yesterday – вчора</p>
+                                <p>last night/week/year/day - минолої ночі/тижня/року/дня</p>
+                                <p>two year ago - два роки тому</p>
+                                <p>in 1992 – в 1992 році</p>
+                                <p>at 6 o'clock – в 6 годин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <p class="font-title fw-bold" id="scrollspyHeading5">Рекомендації</p>
+                        <div class="row p-0 m-0 mt-5 justify-content-between">
+                            <p class="fw-bold font-medium">
+                                Матеріали, які варто дослідити
+                            </p>
+                            <th:block th:if="${test_list}">
+                                <div class="col-12 row m-0">
+                                    <th:block th:each="test, state : ${test_list}">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-header btn-tests p-2">
+                                                    <p><a th:href="@{/testing/{id}(id=${test.getId})}" style="color: white;" th:text="${test.getTest_name}"></a></p>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <p class="" th:text="${test.getTest_description}"></p>
+                                                    <p class="tag-font"><a href="#">PastSimple</a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th:block>
+                                </div>
+                            </th:block>
+                            <th:block th:th:unless="${test_list}">
+                                <p>Зараз немає доступних матеріалів на цю тему</p>
+                            </th:block>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+
+            </div>
+            <footer th:replace="fragments/footer :: footer"></footer>
+        </div>
+    </div>
+        <script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+        <script src="arrow_rotate.js"></script>
+</body>
+</html>

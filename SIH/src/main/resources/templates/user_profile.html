@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+    <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+</head>
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center">
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-11 col-lg-10 row m-0 justify-content-center">
+                <div class="col-3 d-block background-yellow justify-content-center text-center border-radius-m p-3">
+                    <img src="../../img/user_profile/user-profile-photo.svg" class="user-profile-logo">
+                    <p class="font-medium fw-bold" th:text="${username}" />
+                    <a href="#" class="a-black">Налаштування</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-11 col-lg-10 m-0 background-dark-greed border-radius-m
+                    p-3 font-color-white mt-5" style="border-radius: 30px 30px 0px 0px;">
+                <p>Мої досягнення</p>
+
+            </div>
+            <div class="col-12 col-md-11 col-lg-10 background-light-green p-3 m-0 mb-5"
+                 style="border-radius: 0px 0px 30px 30px;">
+                <p>1. Успішна реєстрація!</p>
+                <div class="col-12 text-center"><span class="text-center">
+                            <img src="../../img/user_profile/arrow-down.svg">
+                        </span>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <div class="navigation-bar "></div>
+    </div>
+</div>
+    <script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="arrow_rotate.js"></script>
+</body>
+
+</html>

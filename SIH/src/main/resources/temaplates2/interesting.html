@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+    <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+</head>
+
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center">
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-11 col-lg-10 row m-0 justify-content-center">
+                <p class="font-header">Останні тести користувачів</p>
+                <th:block th:if="${test_preview}">
+                    <div class="col-12 row m-0">
+                        <th:block th:each="test, state : ${test_preview}">
+                                <div class="col-4 my-3">
+                                    <div class="col-12 background-read-green mt-1 border-radius-m p-2">
+                                        <p th:text="${test.getTest_name}"></p>
+                                        <p class="font-small" th:text="${test.getTest_desc}"></p>
+                                        <div class="col-12 text-center"><a class="btn nav-btn-log mt-3" th:href="@{/testing/{id}(id=${test.getTest_id})}" role="button">
+                                                Читати далі
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </th:block>
+                    </div>
+                </th:block>
+
+            </div>
+        </div>
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <div class="navigation-bar "></div>
+    </div>
+</div>
+<script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="arrow_rotate.js"></script>
+</body>
+
+</html>

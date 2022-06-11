@@ -1,0 +1,48 @@
+<th:nav xmlns:th="http://www.thymeleaf.org" th:fragment="nav">
+    <nav class="p-0 navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+        <div class="container-fluid nav-bg-color align-middle">
+            <a class="navbar-brand" th:href="@{/}">
+                <img th:src="@{/img/sih_img/menu/SIH_logo.svg}" class="nav-brand-icon">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" th:href="@{/граматика}">Граматика</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" th:href="@{/читання}">Читання</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" th:href="@{/словничок}">Словничок</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" th:href="@{/interesting}">Цікаві матеріали</a>
+                    </li>
+                    <th:block th:if="${#authorization.expression('hasRole(''ROLE_ADMIN'')')}">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" th:href="@{/admin}">Admin</a>
+                    </li>
+                    </th:block>
+                </ul>
+                <form class="d-flex nav-form">
+                    <th:block th:unless="!${#authorization.expression('hasRole(''ROLE_USER'')')} and !${#authorization.expression('hasRole(''ROLE_ADMIN'')')}">
+                        <a class="btn nav-btn-log" href="/profile">Мій профіль</a>
+                        <a class="btn nav-btn-reg" href="/logout">Вийти</a>
+                    </th:block>
+
+                    <th:block
+                            th:if="!${#authorization.expression('hasRole(''ROLE_USER'')')} and !${#authorization.expression('hasRole(''ROLE_ADMIN'')')}">
+                        <a class="btn nav-btn-log" th:href="@{/login}">Увійти</a>
+                        <a class="btn nav-btn-reg" th:href="@{/registration}">Зареєструватись</a>
+                    </th:block>
+                </form>
+            </div>
+        </div>
+    </nav>
+</th:nav>

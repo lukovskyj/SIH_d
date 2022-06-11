@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+    <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+</head>
+
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center">
+
+        <div class="row justify-content-center background-dark-greed py-5">
+            <div class="col-12 col-md-11 col-lg-10 row m-0">
+                <table>
+                    <tr>
+                        <td class="col-7">
+                            <p class="font-header font-color-white">Вітаємо у Словничку!
+                            </p>
+                            <p class="basic_font_black background-dark-white mt-3 p-3 border-radius-m">SIH пропонує
+                                безліч готових статтей, та вправ, щоб Ви не тільки
+                                знали правила, а й уміли їх використовувати на практиці
+                            </p>
+                        </td>
+                        <td class="col-5"><img class="w-100" th:src="@{/img/sih_img/gremma_welcome/ph1.svg}"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center py-5">
+            <div class="col-12 col-md-11 col-lg-10 row m-0">
+                <table>
+                    <tr>
+                        <td class="col-5"><img class="w-100" th:src="@{/img/sih_img/gremma_welcome/ph2.svg}"></td>
+                        <td class="ps-3 col-7">
+                            <p class="font-header">Досліджуйте цікаві статі та навчальні матеріали
+                            </p>
+                            <p class="basic_font_black background-dark-greed mt-3 p-3 border-radius-m"
+                               style="background-color: #68C5B2;">Ви завжди
+                                зможете відкласти невідоме слово для вивчення. Пізніше, за допомогою інтерактивних
+                                тестів, Ви зможете вивчати ці слова.
+                            </p>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-12 row mx-0 justify-content-center">
+            <div class="row justify-content-center background-light-blue py-5">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <table>
+                        <tr>
+                            <td class="col-7">
+                                <p class="font-header">Ми прослідкуємо, щоб Ви не забули вивчені
+                                    слова!
+                                </p>
+                                <p class="basic_font_black background-white mt-3 p-3 border-radius-m">Система
+                                    автоматично вибирає слова, які Ви вже вивчили, які ще потрібно підівчити, та які
+                                    потрібно підгадати, із плином часу.
+                                </p>
+                            </td>
+                            <td class="col-5"><img class="w-100" th:src="@{/img/sih_img/gremma_welcome/ph3.svg}"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 row mx-0 justify-content-center">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-11 col-lg-10 row m-0">
+                    <p class="text-center font-header">Матеріали на будь-який смак!</p>
+                    <div class="row mx-0 justify-content-around mt-5">
+                        <div class="col-5">
+                            <div class="card border-dark mb-3">
+                                <div class="card-header font-medium">Відпочинок</div>
+                                <div class="card-body justify-content-center row">
+                                    <div class="col-8"><img class="card-img w-100"
+                                                            th:src="@{/img/sih_img/gremma_welcome/ph_l1.svg}"></div>
+                                </div>
+                                <div class="card-body text-dark text-center">
+                                    <p class="card-text text-start">Досліджуйте світ подорожей та туризму. У цій
+                                        категорії
+                                        містяться статті про описи мандрівок, чарівних місць, особливостей поїздок
+                                        та багато іншого!</p>
+                                    <a href="#" class="btn nav-btn-log mt-3">Пригодницькі подорожі</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="card border-dark mb-3">
+                                <div class="card-header font-medium">Буденна говірка</div>
+                                <div class="card-body justify-content-center row">
+                                    <div class="col-8"><img class="card-img w-100"
+                                                            th:src="@{/img/sih_img/gremma_welcome/ph_l2.svg}"></div>
+                                </div>
+                                <div class="card-body text-dark text-center">
+                                    <p class="card-text text-start">У розмові із співрозмовником Ви можете
+                                        зустрітись із
+                                        дивними висловами, скороченнями, сленгом. Вивчайте відмінності між
+                                        повсякденним там літературним мовленням.</p>
+                                    <p></p>
+                                    <a href="#" class="btn nav-btn-log mt-3">Буденна говірка</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 row justify-content-center">
+                            <div class="col-8">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Досліджуйте безліч інших матеріалів</h5>
+                                        <p class="card-text">Кожна стаття працює у взаємо звязку і словничком.
+                                            Прочитавши статтю, не забувайте додавати незнайомі вам слова для
+                                            подальшого їх вивчення.</p>
+                                        <div class="col-12 justify-content-evenly">
+                                            <a href="#" class="btn nav-btn-reg mt-3">Пригодницькі подорожі</a>
+                                            <a href="#" class="btn nav-btn-reg mt-3">Пригодницькі подорожі</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center p-y-3">
+                    <div class="col-10 background-dark-greed p-3 border-radius-m row justify-content-center">
+                        <div class="col-12 font-color-white font-header">
+                            <p class="text-center">Всі ці та багато інших функцій доступні після
+                                реєстрації</p>
+                        </div>
+                        <div class="col-12 row justify-content-center">
+                            <div class="col-3">
+                                <a class="btn nav-btn-log mt-3 w-100" href="#" role="button">Увійти</a>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3">
+                                <a class="btn nav-btn-log mt-3 w-100" href="#" role="button">Зареєструватися</a>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center pt-3">
+                            <img th:src="@{/img/sih_img/index.page/registration-respond.svg}" class="w-75 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="fragments/footer :: footer"></footer>
+    </div>
+</div>
+<script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="arrow_rotate.js"></script>
+</body>
+
+</html>

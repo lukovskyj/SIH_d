@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+    <!--sec:authorize="hasAuthority('ROLE_ADMIN')"-->
+</head>
+
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center">
+
+        <div class="row justify-content-center  p-y-3">
+            <div class="col-12 col-md-11 col-lg-10 row m-0">
+                <p class="font-header">Сторінка адміністрування</p>
+                <div class="col-12 background-dark-greed my-3 p-3 border-radius-m text-center row">
+                    <p class="font-medium font-color-white">Мої тести</p>
+                    <th:block th:each="test_list, state : ${test_list}">
+                        <div class="col-12 background-white border-radius-m my-3 d-flex p-3 justify-content-between">
+                            <p th:text="'Тест №' + (${state.index}+1) + ' : ' + ${test_list.getTest_name}"></p>
+                            <p th:text="'Опис тесту: ' + ${test_list.getTest_description}"></p>
+                        </div>
+                    </th:block>
+                    <div class="col-12 my-3 d-flex justify-content-center">
+                        <a th:href="@{/admin/test}" class="btn nav-btn-reg">Адміністрування тестів</a>
+                    </div>
+                </div>
+                <th:block if="${article_list}">
+                    <div class="col-12 background-dark-greed my-3 p-3 border-radius-m text-center row">
+                        <p class="font-medium font-color-white">Мої статті</p>
+                        <th:block th:each="article_list, state : ${article_list}">
+                            <div class="col-12 background-white border-radius-m my-3 d-flex p-3 justify-content-between">
+                                <p th:text="'Стаття №' + (${state.index}+1) + ' : ' + ${article_list.getArticleName}"></p>
+                                <p th:text="'Опис тесту: ' + ${article_list.getArticleDesc}"></p>
+                            </div>
+                        </th:block>
+                        <div class="col-12 my-3 d-flex justify-content-center">
+                            <a th:href="@{/admin/article}" class="btn nav-btn-reg">Адміністрування статтей</a>
+                        </div>
+                    </div>
+                </th:block>
+            </div>
+        </div>
+<!--        <div class="row justify-content-center  pb-5">-->
+<!--            <div class="col-12 col-md-11 col-lg-10 row m-0">-->
+<!--                <div class="col-12 background-dark-greed p-3 border-radius-m text-center row">-->
+<!--                    <p class="font-medium font-color-white">Створити новий тест</p>-->
+<!--                    <div class="col-12 background-white border-radius-m my-3 d-flex p-3 justify-content-center">-->
+<!--                        <a href="#" class="btn nav-btn-reg">Створити новий тест</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <div class="navigation-bar "></div>
+    </div>
+</div>
+<script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="arrow_rotate.js"></script>
+</body>
+
+</html>

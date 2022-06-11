@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <th:block th:replace="fragments/header :: header_links"></th:block>
+    <title>Past Simple | SIH</title>
+</head>
+
+<body>
+<div class="container-body position-relative">
+    <nav th:replace="fragments/navBar :: nav"></nav>
+    <div class="col-12 row mx-0 justify-content-center">
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-11 col-lg-10 row m-0">
+                <p><a href="/admin" class="tag-link">Повернутися назад</a></p>
+                <p class="font-header">Створення нової статті</p>
+                <p class="font-medium">Заповніть форму</p>
+                <form class="mt-5" th:action="@{/admin/create/article}" method="post">
+                    <div class="col-12 py-3">
+
+                        <p>Назва статті</p>
+                        <input type="text" class="form-control" name="a_name">
+                    </div>
+                    <div class="col-12 py-3">
+                        <p>Опис тесту</p>
+                        <input type="text" class="form-control" name="a_desc">
+                    </div>
+                    <div class="col-12 py-3">
+                        <p>Вміст статті</p>
+                        <input type="text" class="form-control" name="a_data">
+                    </div>
+                    <div class="col-12 justify-content-center d-flex mb-3">
+                        <button class="nav-btn-reg" type="submit">Далі</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <div class="navigation-bar "></div>
+    </div>
+</div>
+<script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="arrow_rotate.js"></script>
+</body>
+
+</html>
